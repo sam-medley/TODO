@@ -2,7 +2,7 @@
 repository for an interactive web application that functions as a todo list
 
 Will be coded in html, css, and javascript. No framework(we could migrate to REACT later on). 
-Reccomended tools: VS Code, github, live preview extension. 
+Reccomended tools: VS Code, github, live preview extension, github extension.
 
 **Functions:**
 1. Add function that allows the user to add a custom task.
