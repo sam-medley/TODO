@@ -2,7 +2,7 @@
 repository for an interactive web application that functions as a Sumikko Gurashi themed todo list.
 
 Will be coded in html, css, and javascript. No framework(we could migrate to REACT later on). 
-Reccomended tools: VS Code, github, live preview extension, github extension, bootstrap, postgresql.  
+Reccomended tools: VS Code, github, live preview extension, github extension, bootstrap, postgresql, github copilot, jupyter notebook.   
 
 There can be 2 pages for the application. A character selection page and the game page(contains todo list). A login page can possibly be implemented. 
 User information can be stored in a postgresql database. 
