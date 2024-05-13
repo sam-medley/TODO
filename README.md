@@ -1,5 +1,5 @@
 # TODO
-repository for an interactive web application that functions as a Sumikko Gurashi character themed todo list.
+repository for an interactive web application that functions as a Sumikko Gurashi themed todo list.
 
 Will be coded in html, css, and javascript. No framework(we could migrate to REACT later on). 
 Reccomended tools: VS Code, github, live preview extension, github extension, bootstrap. 
