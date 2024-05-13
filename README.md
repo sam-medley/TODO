@@ -16,9 +16,10 @@ User information can be stored in a postgresql database.
 A completed task will reward the user with coins. Coins can be used for buying supplies for your Sumikko Gurashi character.
 
 **Character selection**
-1. The user can select a character from Sumikko Gurashi as their pet. A submit button will confirm the character selection and bring the user to the game page. 
-2. They must feed their character every 24 hours otherwise it will die.
-3. Food can be bought from the supply store with coins earned from completed tasks. 
+1. The user can select a character from Sumikko Gurashi as their pet. 
+2. A submit button will confirm the character selection and bring the user to the game page. 
+3. They must feed their character every 24 hours otherwise it will die.
+4. Food can be bought from the supply store with coins earned from completed tasks. 
 
 
 
