@@ -11,7 +11,7 @@ User information can be stored in a postgresql database.
 1. Add function that allows the user to add a custom task.
 2. Remove function that removes the users task.
 3. Clear function that removes all tasks.
-4. Complete function allows you to assign a task a complete which will have the task removed from the users list.
+4. Complete function allows you to assign a task as complete which will have the task removed from the users list.
 
 A completed task will reward the user with coins. Coins can be used for buying supplies for your Sumikko Gurashi character.
 
