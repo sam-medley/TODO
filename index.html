@@ -7,18 +7,37 @@
     <title>My Website</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
     <main>
-        <h1>Character Selection</h1> 
-        <form id="characterForm">
-            <input type="radio" id="char1" name="character" value="char1">
-            <label for="char1">Neko</label><br>
-            <input type="radio" id="char2" name="character" value="char2">
-            <label for="char2">Penguin?</label><br>
-            <input type="radio" id="char3" name="character" value="char3">
-            <label for="char3">Shirokuma</label><br>
-        </form>
+        <h1>TODO</h1> 
+        <!--utilizes bootstrap to contain the character selection form-->
+        <div class="container">
+          <h2>Character Selection</h2> 
+          <form>
+            <!--the form utilizes radio buttons for each character-->
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="char1" name="character" value="char1">
+              <label class="form-check-label" for="char1">
+                Neko
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="char2" name="character" value="char2">
+              <label class="form-check-label" for="char2">
+                Penguin?
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" id="char3" name="character" value="char3">
+              <label class="form-check-label" for="char3">
+                Shirokuma
+              </label>
+            </div>
+          </form>
+        </div>
+
     </main>
 	<script src="index.js"></script>
   </body>
