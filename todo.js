@@ -10,7 +10,7 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
 
 function addTask(task){
     const taskList = document.getElementById('taskList');
-    const listItem = document.createElement('listItem'); 
+    const listItem = document.createElement('li'); //must be li element so it stays in column, bootstrap rule bruh
     listItem.className = 'list-group-item';
     listItem.innerText = task; //the text property of the object = the string task which gets passed as a parameter 
     listItem.addEventListener('click', function(){ //when the add button is clicked, the item text color becomes green
