@@ -10,20 +10,21 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
 
 function addTask(task){
     const taskList = document.getElementById('taskList');
-    const listItem = document.createElement('li'); //must be li element so it stays in column, bootstrap rule bruh
-    listItem.className = 'list-group-item';
-    listItem.innerText = task; //the text property of the object = the string task which gets passed as a parameter 
-    listItem.addEventListener('click', function(){ //when the add button is clicked, the item text color becomes green
-        this.classList.toggle('list-group-item-success');
+
+    //creating a <div> for each button with the "col-12 mb-2 classname. This way the buttons stack ontop of each other"
+    var newDiv = document.createElement("div");
+    newDiv.className = "col-12 mb-2";
+  
+    const listItem = document.createElement('button'); //creates a button which will be used as a listItem that displays the task
+    listItem.className = 'btn btn-secondary w-100';
+    listItem.innerText = task; //the text property of the object = the string task which gets passed as a parameter in this function
+    
+    //when a task is clicked, the newDiv is removed, which deletes the task from the list 
+    listItem.addEventListener('click', function(){ 
+        taskList.removeChild(newDiv);
     });
 
-    const removeBtn = document.createElement('button'); //creating remove object for when we want to remove tasks.
-    removeBtn.className = 'btn btn-danger btn-sm float-end'; //a remove button is created and implemented into the task itself
-    removeBtn.innerText = 'Remove';
-    removeBtn.addEventListener('click', function() {
-        taskList.removeChild(listItem);
-    });
-
-    listItem.appendChild(removeBtn);
-    taskList.appendChild(listItem);
+    //the newDiv appends the listItem and the taskList appends the newDiv
+    newDiv.append(listItem);
+    taskList.appendChild(newDiv);
 }
