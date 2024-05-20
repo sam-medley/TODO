@@ -19,6 +19,7 @@ function addTask(task){
     const listItem = document.createElement('button'); //creates a button which will be used as a listItem that displays the task
     listItem.className = 'btn btn-secondary w-100';
     listItem.innerText = task; //the text property of the object = the string task which gets passed as a parameter in this function
+    listItem.id = 'strikeButton';
 
     //these are the edit buttons that appear next to each task. They will appear as invisible and locked until the user clicks the edit button.
     var editDiv = document.createElement("div");
@@ -32,6 +33,11 @@ function addTask(task){
     listItem.addEventListener('click', function(){ 
         taskList.removeChild(newDiv);
         taskList.removeChild(editDiv);
+    });
+
+    editItem.addEventListener('click', function(){
+      taskList.removeChild(newDiv);
+      taskList.removeChild(editDiv);
     });
 
     //the newDiv appends the listItem and the taskList appends the newDiv
