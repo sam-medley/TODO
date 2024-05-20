@@ -45,14 +45,19 @@ function addTask(task){
     taskList.appendChild(newDiv);
     editDiv.append(editItem);
     taskList.appendChild(editDiv);
-
 }
 
 //makes the editDiv which holds the delete buttons visible
 function toggleEdit(){
   const taskList = document.getElementById('taskList');
   for(let i=1; i<=taskList.childElementCount; i++){
-    console.log(i);
-    taskList.children[i].style.visibility = 'visible';
+
+    //checks to see if the button is visible and even(an even button will always be a delete button)
+    if(taskList.children[i].style.visibility == 'visible' && i%2 != 0){
+      taskList.children[i].style.visibility = 'hidden';
+    }
+    else{
+      taskList.children[i].style.visibility = 'visible'; //makes button visible if it is already hidden
+    }
   }
 }
