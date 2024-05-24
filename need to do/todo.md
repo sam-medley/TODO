@@ -8,3 +8,4 @@ The user will be able to add/remove tasks. The users character will also be disp
 - have the delete buttons remove the task without incrementing bank object
 - add css trash bin animation for delete buttons
 - draft a css design for the page
+- there is an error with the edit task, when all tasks are deleted you can not exit edit mode
