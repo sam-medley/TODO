@@ -1,3 +1,5 @@
+let apple = 0;//this will be used as currency for when tasks are completed
+
 document.getElementById('taskForm').addEventListener('submit', function(event) {
   event.preventDefault();
   const taskInput = document.getElementById('newTask'); //creating an object that is the users inputed task
@@ -32,6 +34,8 @@ function addTask(task){
   listItem.addEventListener('click', function(){
     taskList.removeChild(newDiv);
     taskList.removeChild(editDiv);
+    apple += 1; //task is completed so you earn an apple
+    console.log(apple)
   });
 
   editItem.addEventListener('click', function(){
@@ -51,8 +55,13 @@ function toggleEdit(){
   const taskList = document.getElementById('taskList');
   const taskInput = document.getElementById('newTask'); // Ensure taskInput is referenced correctly
 
+  //if the there is no second child then the list is empty, so pressing edit again enables the list
+  if(taskList.lastChild = 1){
+    taskInput.disabled = false;
+  }
+
   for(let i=0; i<taskList.childElementCount; i++){
-    //checks to see if the button is visible and even(an even button will always be a delete button)
+    //checks to see if the button is visible and even(an odd button will always be a delete button)
     if(taskList.children[i].style.visibility == 'visible' && i % 2 != 0){
       taskList.children[i].style.visibility = 'hidden';
       taskInput.disabled = false;
