@@ -1,49 +1,47 @@
 body {
-    background-color: #f9f5f4; /* Light pink background */
-    font-family: 'Helvetica Neue', sans-serif;
-    padding: 20px;
-  }
+  background-color: #f9f5f4; /* Light pink background */
+  font-family: 'Helvetica Neue', sans-serif;
+  padding: 20px;
+}
 
-  .container-fluid {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
-  }
+.container-fluid {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
 
-  h1, h2 {
-    color: #a1a1a1; /* Dark grey text */
-    text-align: center;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
+h1, h2 {
+  color: #a1a1a1; /* Dark grey text */
+  text-align: center;
+  font-family: 'Comic Boys', cursive, sans-serif;
+}
 
-  .form-check-label {
-    font-weight: bold;
-    color: #030203; /* Slightly darker grey text */
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
+.form-check-label {
+  font-weight: bold;
+  color: #030203; /* Slightly darker grey text */
+  font-family: 'Comic Boys', cursive, sans-serif;
+}
 
-  /* Custom radio button style */
-  .form-check-input[type="radio"] {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    border-radius: 50%;
-  }
+/* Custom radio button style */
+.form-check-input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
 
-  .form-check-input[type="radio"]:checked {
-    background-color: #faa5a5; /* Light orange background when selected */
-  }
+.form-check-input[type="radio"]:checked {
+  background-color: #faa5a5; /* Light orange background when selected */
+}
 
-  /* Custom button style */
-  #navigateButton {
-    margin-top: 20px;
-    background-color: #68e9c9; /* Yellow button */
-    border: none;
-  }
+/* Custom button style */
+#navigateButton {
+  margin-top: 20px;
+  background-color: #68e9c9; /* Yellow button */
+  border: none;
+}
 
-  #navigateButton:hover {
-    background-color: #ffa000; /* Darker yellow on hover */
-  }
-
-  
+#navigateButton:hover {
+  background-color: #ffa000; /* Darker yellow on hover */
+}
