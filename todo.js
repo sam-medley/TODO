@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const urlParams = new URLSearchParams(window.location.search); //assigns the current url paramter to the variable
   const character = urlParams.get('character'); //assigns the character variable of the url to variabe
   const imgElement = document.getElementById('characterImage'); //assigns the characterImage element 
-  imgElement.src = '/sprites/' + character + '.gif'; //changes the path of src to include the character variable we got from the url
+  imgElement.src = './sprites/' + character + '.gif'; //changes the path of src to include the character variable we got from the url
 });
 
 document.getElementById('taskForm').addEventListener('submit', function(event) {
