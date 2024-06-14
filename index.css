@@ -14,13 +14,13 @@ body {
 h1, h2 {
   color: #a1a1a1; /* Dark grey text */
   text-align: center;
-  font-family: 'Comic Boys', cursive, sans-serif;
+  font-family: 'Comic Neue', cursive;
 }
 
 .form-check-label {
   font-weight: bold;
   color: #030203; /* Slightly darker grey text */
-  font-family: 'Comic Boys', cursive, sans-serif;
+  font-family: 'Comic Neue', cursive;
 }
 
 /* Custom radio button style */

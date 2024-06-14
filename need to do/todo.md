@@ -4,4 +4,6 @@ The user will be able to add/remove tasks. The users character will also be disp
 
 **what needs to be added**
 - add css trash bin animation for delete buttons
-- draft a css design for the page
+- add updateTheme function to addTask function so delete buttons are apart of theme 
+- make the character into an action button
+- the character will talk when clicked 

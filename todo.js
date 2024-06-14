@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const character = urlParams.get('character'); //assigns the character variable of the url to variabe
   const imgElement = document.getElementById('characterImage'); //assigns the characterImage element 
   imgElement.src = './sprites/' + character + '.gif'; //changes the path of src to include the character variable we got from the url
+  updateTheme(character);
 });
 
 document.getElementById('taskForm').addEventListener('submit', function(event) {
@@ -17,6 +18,27 @@ document.getElementById('taskForm').addEventListener('submit', function(event) {
     taskInput.value = ''; //Clear the input field
   }
 });
+
+function updateTheme(character){
+  switch(character){
+    case 'Neko':
+      document.body.style.backgroundColor = '#fcf0cf';
+      document.getElementById('title').style.color = '#f0c678';
+      document.getElementById('title').style.textShadow = '1px 1px 2px #b9985a';
+      document.getElementById('newTask').style.borderColor = '#f0c678';
+      document.getElementById('submit').style.backgroundColor = '#f0c678';
+      document.getElementById('edit').style.backgroundColor = '#f0c678';
+      document.getElementById('characterImage').style.border = '5px solid #f0c678';
+      break;
+    case 'Penguin?':
+      body.style.backgroundColor = '#e0f2f1'; // Light mint
+      body.style.color = '#004d40'; // Dark green
+      break;
+    case 'Tokage': 
+      body.style.backgroundColor = '#fce4ec';
+      body.style.color = '#880e4f'; 
+  }
+}
 
 function addTask(task){
   const taskList = document.getElementById('taskList');
@@ -37,6 +59,7 @@ function addTask(task){
   const editItem = document.createElement('button');
   editItem.className = 'btn btn-secondary w-100';
   editItem.innerText = 'delete';
+  editItem.id = 'delete';
 
   //when a task is clicked, the newDiv is removed, which deletes the task from the list 
   listItem.addEventListener('click', function(){

@@ -33,13 +33,10 @@
 }
 
 body {
-    font-family: 'Comic Boys', cursive, sans-serif;
-    background-color: #fce4ec;
+    font-family: 'Comic Neue', cursive;
 }
 
 h2 {
-    color: #ff80ab;
-    text-shadow: 1px 1px 2px #f50057;
     font-size: 2.5em;
 }
 
@@ -52,13 +49,12 @@ h2 {
 }
 
 input#newTask {
-    border: 2px solid #ff80ab;
     border-radius: 10px;
     padding: 10px;
 }
 
 button.btn {
-    background-color: #ff80ab;
+    background-color: grey;
     border: none;
     border-radius: 10px;
     color: white;
@@ -71,7 +67,7 @@ button.btn:hover {
 
 #characterImage {
     border-radius: 50%;
-    border: 5px solid #ff80ab;
+
 }
 
 #taskList {
