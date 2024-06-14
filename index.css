@@ -31,14 +31,21 @@ h1, h2 {
   border-radius: 50%;
 }
 
-.form-check-input[type="radio"]:checked {
-  background-color: #faa5a5; /* Light orange background when selected */
+#char1:checked {
+  background-color: #f5e486;
+}
+
+#char2:checked {
+  background-color: #b8ff9c;
+}
+
+#char3:checked {
+  background-color: rgb(127, 236, 255);
 }
 
 /* Custom button style */
 #navigateButton {
   margin-top: 20px;
-  background-color: #68e9c9; /* Yellow button */
   border: none;
 }
 
