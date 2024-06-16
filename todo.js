@@ -30,13 +30,23 @@ function updateTheme(character){
       document.getElementById('edit').style.backgroundColor = '#f0c678';
       document.getElementById('characterImage').style.border = '5px solid #f0c678';
       break;
-    case 'Penguin?':
-      body.style.backgroundColor = '#e0f2f1'; // Light mint
-      body.style.color = '#004d40'; // Dark green
+    case 'Penguin':
+      document.body.style.backgroundColor = '#A8D5BA';
+      document.getElementById('title').style.color = '#f0c678';
+      document.getElementById('title').style.textShadow = '1px 1px 2px #b9985a';
+      document.getElementById('newTask').style.borderColor = '#f0c678';
+      document.getElementById('submit').style.backgroundColor = '#f0c678';
+      document.getElementById('edit').style.backgroundColor = '#f0c678';
+      document.getElementById('characterImage').style.border = '5px solid #f0c678';
       break;
     case 'Tokage': 
-      body.style.backgroundColor = '#fce4ec';
-      body.style.color = '#880e4f'; 
+      document.body.style.backgroundColor = '#A2D8E8';
+      document.getElementById('title').style.color = '#5A9AB7';
+      document.getElementById('title').style.textShadow = '1px 1px 2px #5A9AB7';
+      document.getElementById('newTask').style.borderColor = '#5A9AB7';
+      document.getElementById('submit').style.backgroundColor = '#5A9AB7';
+      document.getElementById('edit').style.backgroundColor = '#5A9AB7';
+      document.getElementById('characterImage').style.border = '5px solid #5A9AB7';
   }
 }
 
